@@ -193,3 +193,67 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 ```sql
 FROM myDB SELECT places WHERE id >4;
 ```
+
+# MySQL
+
+RDMBS: Relational database Management system.
+Is a database Management system that is based on the relational model
+
+
+### Relational model:
+Is an approach to managing data using a structure and language consistent
+with `first order predicate logic`.
+
+In the relational model of database, all data is represented in terms of
+tuples, grouped into relations. A database organized in terms of the
+relational model is a relational database.
+
+Today the RDMBS is used to stora and manage huge volime of data, This is
+called relational database because all the data is stored into different
+tables and relations are established using primary keys or other keys
+known as foreing keys.
+
+A RDMBS is a SW that enables:
+  - Implement database with tables, columns and indexes.
+  - Guarantees the referential integrity between rown of various tables.
+  - Updates the indexes automatically
+  - Interprets an SQL query and combines information from various tables.
+
+### RDMBS terminology
+
+- Primary keys
+  A Primary key is unique. A key value cannot occur twice in one table.
+  With a key, you can find at most one row
+- Foreing key
+  A foreing key is the linking pin between two tables.
+- Compound key
+  Is a key that consists of multiple columns, because one column is not
+  sufficiently unique.
+- Referential integrity
+  Referential integrity makes sure that a foreing key value always points
+  to an existing row.
+
+When installing all the MySQL related binaries are installed in `/usr/bin`
+and `/usr/sbin`. All the tables and databases will be createds in
+`/var/lib/mysql` dir.
+
+### Post-installation steps:
+MySQL ships with a blank password for the root MySQL user.
+As soon as you have successfully installed the database and client
+
+
+
+#### Testing installation
+```
+$ mysqladmin --version
+```
+
+### Execute simple commands with MySQL client
+```
+
+```
+#### Check if MySQL is up and running
+```
+[porko@A mysql] $ ps -ef | grep mysqld
+porko     5380  5351  0 16:05 pts/5    00:00:00 grep --color=auto mysqld  
+```
